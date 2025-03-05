@@ -44,7 +44,10 @@ function getRelevantEmoji(excuse) {
 }
 
 // API Route
-export async function POST(req) {
+export default async function handler(req, res) {
+    if (req.method !== "POST") {
+        return res.status(405).json({ error: "Method Not Allowed" });
+    }
   try {
     const { problem, tone } = await req.json();
 
