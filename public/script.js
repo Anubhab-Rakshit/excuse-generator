@@ -19,7 +19,7 @@ async function generateExcuse() {
         button.innerHTML = `<i class="fas fa-spinner fa-spin"></i>`;
         button.disabled = true;
 
-        const response = await fetch("/generate", {
+        const response = await fetch("/api/generate", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ problem: problemInput, tone }) // Send problem & tone
