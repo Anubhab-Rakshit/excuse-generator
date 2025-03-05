@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Excuse Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="/" class="logo-container">
+            <img src="/image.png?height=40&width=40" alt="ExcuseGen Logo" class="logo">
+            <h1>ExcuseGen</h1>
+        </a>
+        
+        <!-- Navbar Links -->
+        <ul class="nav-links" id="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="/">Go Back</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h2>AI Excuse Generator</h2>
+        <p>Enter your problem, and let AI create the perfect excuse for you!</p>
+        <div class="input-container">
+            <input type="text" placeholder="Enter your problem..." />
+            <button>
+                <i class="fas fa-magic"></i> Generate Excuse
+            </button>
+        </div>
+        
+        <select id="tone-selector">
+            <option value="funny">😂 Funny</option>
+            <option value="sarcastic">😏 Sarcastic</option>
+            <option value="formal">🎩 Formal</option>
+        </select>
+        
+        <p id="excuseOutput"></p>
+
+        <div class="button-group">
+            <button id="copyExcuse">
+                <i class="fas fa-copy"></i> Copy Excuse
+            </button>
+            <button id="tweetExcuse">
+                <i class="fab fa-twitter"></i> Tweet This!
+            </button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
