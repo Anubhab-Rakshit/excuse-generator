@@ -1,4 +1,4 @@
-require("dotenv").config({ path: ".env.local" });
+require("dotenv").config();
 
 const API_KEY = process.env.GEMINI_API_KEY;
 console.log("API Key loaded:", API_KEY ? "✅" : "❌ Missing API Key");
